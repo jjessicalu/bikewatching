@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+ 
+body {
+  font: 100%/1.5 system-ui, sans-serif;
+  display: flex;
+  flex-flow: column;
+  max-width: 80em;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+header label input {
+  grid-column: 2;
+  width: 800px;
+}
+
+#time-slider {
+  grid-column: 2;
+  width: 400px;
+}
+
+#time-display,
+#any-time {
+  display: block;
+  grid-column: 2;
+  text-align: right;
+  margin-top: -0.7em;
+}
+
+
+#any-time {
+  color: #bbb8b8;
+  font-style: italic;
+}
